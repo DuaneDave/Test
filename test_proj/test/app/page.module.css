@@ -1,0 +1,116 @@
+.header {
+  width: 100%;
+  height: 60px;
+  padding: 10px 30px;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.header > a {
+  color: black;
+  font-weight: 700;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.header > a span {
+  color: #f48023;
+}
+
+.header ul {
+  list-style-type: none;
+  gap: 1rem;
+  align-items: center;
+}
+
+.header ul li {
+  background: #f48023;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  color: white;
+}
+
+.header ul li:last-of-type {
+  background: transparent;
+  border: 1px solid #f48023;
+  color: #f48023;
+}
+
+.header ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 0.85fr 1fr;
+  height: calc(100vh);
+}
+
+.container > div {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.container > div > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.container p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.container input {
+  padding: 0.5rem 1rem;
+  background: white;
+  border: 1px solid #757575;
+  margin-bottom: 1rem;
+}
+
+.container label {
+  font-size: 0.8rem;
+}
+
+.container button {
+  padding: 0.8rem 1rem;
+  background: #f48023;
+  border: none;
+  margin-top: 1rem;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  width: 100%;
+}
+
+.container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container form div:last-of-type {
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.container form div:last-of-type a {
+  color: #2c2c2c;
+  text-decoration: none;
+}
