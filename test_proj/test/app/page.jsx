@@ -7,7 +7,7 @@ import homeImage from '../public/image/signIn.webp';
 export default function Home() {
   return (
     <>
-      <header className={`flex ${styles.header}`}>
+      <nav className={`flex ${styles.navigation}`}>
         <Link href="/">
           naira<span>refill</span>
         </Link>
@@ -20,7 +20,7 @@ export default function Home() {
             <Link href="/login">Login</Link>
           </li>
         </ul>
-      </header>
+      </nav>
 
       <main>
         <section className={styles.container}>
@@ -28,11 +28,11 @@ export default function Home() {
             <div className="flex flex-column">
               <h1>We've Missed You</h1>
               <p>
-                Kindly signin and get first <br /> access to the very best, <br /> community
-                and unlock more opportunities.
+                Kindly signin and get first <br /> access to the very best,{' '}
+                <br /> community and unlock more opportunities.
               </p>
 
-              <form>
+              <form aria-labelledby="login-form" name="login-form">
                 <div className="flex flex-column">
                   <label>Email:</label>
                   <input type="email" />
@@ -53,7 +53,8 @@ export default function Home() {
               </form>
             </div>
           </div>
-          <Image src={homeImage} alt="hero imgage" />
+
+          <Image aria-hidden="true" src={homeImage} alt="hero imgage" />
         </section>
       </main>
     </>

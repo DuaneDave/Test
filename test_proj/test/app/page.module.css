@@ -1,4 +1,4 @@
-.header {
+.navigation {
   width: 100%;
   height: 60px;
   padding: 1rem 2rem;
@@ -12,45 +12,43 @@
   z-index: 1000;
 }
 
-.header > a {
+.navigation > a {
   color: black;
   font-weight: 700;
   font-size: 2rem;
-  text-decoration: none;
 }
 
-.header > a span {
+.navigation > a span {
   color: #f48023;
 }
 
-.header ul {
+.navigation ul {
   list-style-type: none;
   gap: 1rem;
   align-items: center;
 }
 
-.header ul li {
+.navigation ul li {
   background: #f48023;
   padding: 0.4rem 1rem;
   border-radius: 8px;
   color: white;
 }
 
-.header ul li:last-of-type {
+.navigation ul li:last-of-type {
   background: transparent;
   border: 1px solid #f48023;
   color: #f48023;
 }
 
-.header ul li a {
-  text-decoration: none;
+.navigation ul li a {
   color: inherit;
 }
 
 .container {
   display: grid;
   grid-template-columns: 42% 58%;
-  height: calc(100vh);
+  height: 100vh;
 }
 
 .container > div {
@@ -75,16 +73,22 @@
 
 .container p {
   font-size: 1.15rem;
+}
+
+.container p,
+.container input {
   margin-bottom: 1rem;
-  color: #2c2c2c;
 }
 
 .container input {
   padding: 0.5rem 1rem;
   background: white;
   border: 1px solid #757575;
-  font-size: 1rem;
-  margin-bottom: 1rem;
+  font-size: inherit;
+}
+
+.container input:focus {
+  outline: none;
 }
 
 .container label {
@@ -115,7 +119,7 @@
   font-size: 0.8rem;
 }
 
+.container p,
 .container form div:last-of-type a {
   color: #2c2c2c;
-  text-decoration: none;
 }
