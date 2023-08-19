@@ -2,7 +2,7 @@ import Image from 'next/image';
 import styles from './page.module.css';
 import Link from 'next/link';
 
-import homeImage from '../public/image/signIn.jpg';
+import homeImage from '../public/image/signIn.webp';
 
 export default function Home() {
   return (
@@ -28,7 +28,7 @@ export default function Home() {
             <div className="flex flex-column">
               <h1>We've Missed You</h1>
               <p>
-                Kindly signin and get first access to the very best, community
+                Kindly signin and get first <br /> access to the very best, <br /> community
                 and unlock more opportunities.
               </p>
 

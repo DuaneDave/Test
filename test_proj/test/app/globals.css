@@ -11,3 +11,8 @@
 .flex-column {
   flex-direction: column;
 }
+
+body {
+  background: #fafafa;
+  overflow-y: hidden;
+}
