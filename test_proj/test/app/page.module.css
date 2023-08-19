@@ -127,9 +127,22 @@
 @media screen and (max-width: 968px) {
   .container {
     grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .container > div > div {
+    width: 100%;
   }
 
   .container img {
     display: none;
+  }
+
+  .navigation {
+    padding: 1rem;
+  }
+  
+  .navigation > a {
+    font-size: 1.5rem;
   }
 }
