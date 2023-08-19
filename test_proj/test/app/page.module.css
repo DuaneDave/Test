@@ -124,7 +124,7 @@
   color: #2c2c2c;
 }
 
-@media screen and (max-width: 968px) {
+@media screen and (max-width: 868px) {
   .container {
     grid-template-columns: 1fr;
     padding: 1rem;
